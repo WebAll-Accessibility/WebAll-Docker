@@ -1,4 +1,4 @@
-echo "Weball Docker Container"
+echo "WebAll Docker Container"
 
 echo "Starting MySQL..."
 systemctl start mysql > /dev/null 2>&1
