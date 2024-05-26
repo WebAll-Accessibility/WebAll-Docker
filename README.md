@@ -10,6 +10,7 @@ Questa repository contiene file utili per la creazione e l'utilizzo dell'ambient
 2. Eseguire lo script `build.sh`
 3. Eseguire lo script `enter.sh`
 4. Attendere il setup
+5. Modificare il file `setup-files/wws-env`
 ```
 git clone https://github.com/WebAll-Accessibility/WebAll-Docker
 cd WebAll-Docker
