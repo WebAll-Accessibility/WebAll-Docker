@@ -1,1 +1,1 @@
-docker run --rm -it -v ".":/root/env weball
+docker run -p 80:80 --rm -it -v ".":/root/env weball
