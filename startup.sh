@@ -6,7 +6,7 @@ systemctl start mysql > /dev/null 2>&1
 echo "Starting Apache Web Server..."
 systemctl start apache2 > /dev/null 2>&1
 
-if [ ! -e ./Weball-Widget-Server ]
+if [ ! -d ./Weball-Widget-Server ]
 then
     echo "Setting MySQL root user..."
     mysql -u root < setup-files/init.sql > /dev/null 2>&1
