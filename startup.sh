@@ -16,13 +16,14 @@ then
     n latest > /dev/null 2>&1
     echo "Cleaning /var/www/html..."
     rm -rf /var/www/html > /dev/null 2>&1
-    echo "Cloning git repositories..."
+    echo "Cloning WebAll Widget Server git repository..."
     git clone https://github.com/WebAll-Accessibility/WebAll-Widget-Server > /dev/null 2>&1
-    git clone https://github.com/WebAll-Accessibility/WebAll-Website /var/www/html > /dev/null 2>&1
 fi
 
-# echo "Ensuring permissions..."
-# chown -R www-data /var/www/html > /dev/null 2>&1
+echo "Cloning WebAll Website git repository..."
+rm -rf /var/www/html > /dev/null 2>&1
+git clone https://github.com/WebAll-Accessibility/WebAll-Website /var/www/html > /dev/null 2>&1
+ln -s /var/www/html ./WebAll-Website
 
 cd WebAll-Widget-Server
 if [ ! -f db/created ]
