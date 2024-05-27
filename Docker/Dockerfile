@@ -19,7 +19,6 @@ RUN apt-get install -y apache2
 RUN apt-get install -y php
 RUN apt-get install -y libapache2-mod-php
 RUN apt-get install -y php-mysql
-RUN apt-get install -y libapache2-mod-auth-mysql
 RUN apt-get install -y php-cgi
 
 CMD ["bash", "startup.sh"]
