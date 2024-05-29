@@ -23,5 +23,5 @@ RUN apt-get install -y php-cgi
 
 CMD ["bash", "startup.sh"]
 
-VOLUME /
-WORKDIR /mnt/env
+VOLUME /root/vol
+WORKDIR /root/local
